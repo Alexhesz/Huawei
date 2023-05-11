@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/login-style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top">
+        <img src="HUAWEI.svg" alt="">
+        <p>|</p>
+        <h3>华为商城</h3>
+    </div>
+    <div class="title">
+        <p>华为账号登录</p>
+    </div>
+    <div class="container">
+        <div class="QR-code">
+            <img src="img/QRcode.png" alt="">
+            <span>若您使用华为手机，请前往 “设置” > “华为账号” 扫码登陆</span>
+        </div>
+        <div class="login">
+            <form action="sever.do" method="post">
+                <div>
+                    <label for="username"></label>
+                    <input type="text" name="username" id="username"  placeholder="手机号/邮件地址/账号名"
+                    required>
+                </div>
+                <div>
+                    <label for="passwd"></label>
+                    <input type="password" name="passwd" id="passwd"  placeholder="密码"
+                    required>
+                </div>
+                <div>
+                    <a href="#">短信验证码登录</a>
+                </div>
+                <div>
+                    <button type="submit">登录</button>
+                </div>
+            </form>
+            <div>
+                <span><a href="#">注册</a></span>
+                <span><a href="#">忘记密码</a></span>
+                <span><a href="#">遇到问题</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <span><a href="#">华为账号用户协议</a></span>
+            <span><a href="#">关于华为账号与隐私的声明</a></span>
+            <span><a href="#">常见问题</a></span>
+            <span><a href="#">Cookies</a></span>
+        </div>
+        <p>华为账号 版权所有&copy; 2011-2023</p>
+    </div>
+
+</html>

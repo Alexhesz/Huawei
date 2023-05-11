@@ -1,0 +1,106 @@
+:root {
+    --a-gray: gray;
+    --a-red: #cf0a2c;
+    --bg-color: #f1f3f5;
+    --a-fsize: 12px;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.top{
+    width: 100vw;
+    height: 60px;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+}
+.top>img{
+    width: 130px;
+    margin-left: 200px;
+}
+.top>p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.title{
+    width: 240px;
+    margin: 100px auto;
+    font-size: 40px;
+}
+.container{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+.QR-code{
+    width: 350px;
+    height: 350px;
+    margin-right: 40px;
+    border-right: 0.6px solid var(--bg-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+.QR-code>img{
+    margin: auto;
+    margin-top: 90px;
+}
+.QR-code>span{
+    font-size: var(--a-fsize);
+    align-self:flex-end;
+}
+.login div{
+    margin-bottom: 30px;
+}
+input,button{
+    width: 360px;
+    height: 60px;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+button{
+    background-color: var(--a-red);
+    color: white;
+}
+input:focus{
+    border: 1px solid lightskyblue;
+}
+.login div:last-child{
+    text-align: center;
+}
+.login div:last-child>span+span::before{
+    content: "|";
+    margin-right: 5px;
+}
+.footer{
+    width: 100vw;
+    height: 100px;
+    background-color: var(--bg-color);
+    text-align: center;
+}
+.footer>div{
+    width: 700px;
+    margin: 30px auto;
+}
+.footer span{
+    margin: 5px;
+}
+.footer>div>span+span::before{
+    content: "|";
+    color: var(--a-gray);
+    margin-right: 5px;
+}
+.footer>div a{
+    color: var(--a-gray);
+}
+.footer>div a:hover{
+    color: black;
+}
